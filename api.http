@@ -2,7 +2,21 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Evento Test",
-  "details": "Teste de evento",
-  "maximumAttendees": 1
+  "title": "Evento Test 02",
+  "details": "Teste de evento 02",
+  "maximumAttendees": 2
 }
+
+###
+
+POST http://localhost:3333/events/a58caf76-ce0b-4dfb-9e85-d4f9834da699/attendees
+Content-Type: application/json
+
+{
+  "name": "Eric Rocha",
+  "email": "eric.rocha@ericrocha.dev"
+}
+
+###
+
+GET http://localhost:3333/attendees/1/badge
